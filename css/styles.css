@@ -51,19 +51,19 @@ a {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    min-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    min-width: 1200px;
   }
 }
 .header-container {
@@ -72,6 +72,7 @@ a {
 @media screen and (min-width: 768px) {
   .header-container {
     display: flex;
+    justify-content: center;
     align-items: center;
   }
 }
@@ -1155,7 +1156,7 @@ a {
 }
 
 .footer-form input {
-  width: 450px;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -1171,6 +1172,12 @@ a {
 
 .footer-form input:focus {
   border-color: rgba(255, 255, 255, 0.3);
+}
+@media screen and (min-width: 480px) {
+  .footer-form input {
+    max-width: 450px;
+  }
+  
 }
 
 /*--------FORM-BUTTON--------*/
